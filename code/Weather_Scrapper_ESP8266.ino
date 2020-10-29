@@ -6,12 +6,12 @@
 #include <ArduinoJson.h>
 
 //Network information__________________
-const char* ssid = "pagaladhmi";
-const char* password = "pagalinsaan";
+const char* ssid = "";
+const char* password = "";
 
 //API information__________________________
-const String endpoint = "http://api.openweathermap.org/data/2.5/weather?id=6094817&units=metric&appid=";
-const String key = "0498228c4cc70f8c9f9051d17dee5679";
+const String endpoint = "";
+const String key = "";
 
 
 void setup() {
@@ -46,8 +46,6 @@ void loop() {
       //Visit https://arduinojson.org/v5/assistant/ for a parsing assistant that breaks down the code_____________
       const size_t capacity = JSON_ARRAY_SIZE(2) + 2 * JSON_OBJECT_SIZE(1) + 2 * JSON_OBJECT_SIZE(2) + 2 * JSON_OBJECT_SIZE(4) + JSON_OBJECT_SIZE(5) + JSON_OBJECT_SIZE(6) + JSON_OBJECT_SIZE(14) + 480;
       DynamicJsonBuffer jsonBuffer(capacity);
-
-      //const char* json = "{\"coord\":{\"lon\":-75.7,\"lat\":45.41},\"weather\":[{\"id\":501,\"main\":\"Rain\",\"description\":\"moderate rain\",\"icon\":\"10d\"},{\"id\":701,\"main\":\"Mist\",\"description\":\"mist\",\"icon\":\"50d\"}],\"base\":\"stations\",\"main\":{\"temp\":21.01,\"feels_like\":22.89,\"temp_min\":20.56,\"temp_max\":21.11,\"pressure\":1010,\"humidity\":94},\"visibility\":6437,\"wind\":{\"speed\":2.6,\"deg\":100},\"rain\":{\"1h\":2.04},\"clouds\":{\"all\":90},\"dt\":1596573806,\"sys\":{\"type\":1,\"id\":872,\"country\":\"CA\",\"sunrise\":1596534663,\"sunset\":1596587196},\"timezone\":-14400,\"id\":6094817,\"name\":\"Ottawa\",\"cod\":200}";
 
       JsonObject& root = jsonBuffer.parseObject(http.getString());
 
@@ -90,13 +88,13 @@ void loop() {
       JsonObject& sys = root["sys"];
       int sys_type = sys["type"]; // 1
       int sys_id = sys["id"]; // 872
-      const char* sys_country = sys["country"]; // "CA"
+      const char* sys_country = sys["country"]; // "Country"
       long sys_sunrise = sys["sunrise"]; // 1596534663
       long sys_sunset = sys["sunset"]; // 1596587196
 
       int timezone = root["timezone"]; // -14400
       long id = root["id"]; // 6094817
-      const char* name = root["name"]; // "Ottawa"
+      const char* name = root["name"]; // "City"
       int cod = root["cod"]; // 200
 
       Serial.print(String(weather_0_main));
