@@ -7,11 +7,19 @@ Arduino UnoR3 + Esp8266 (Esp-01) + LCD
 
 * [Diymall Esp8266 (Esp-01) Wifi Module](https://www.amazon.ca/Diymall%C2%AE-Esp8266-Wireless-Transceiver-Mega2560/dp/B00O34AGSU/ref=sr_1_1?dchild=1&keywords=diymall+esp8266&qid=1603991104&s=electronics&sr=1-1)
 
+
 ## Guide 📃
 You can find resources online for setting up your Esp8266 (Esp-01) WiFi Module. This includes running AT-Commands as well as flashing new software on to the module. The Esp8266 is an extremly versatile WiFi Module packed with some handy features in a low-cost chip.
 * [Technical Overview](https://nurdspace.nl/ESP8266#Introduction)
 * [Github Library](https://github.com/sleemanj/ESP8266_Simple)
 * [Youtube Tutorial](https://www.youtube.com/watch?v=qU76yWHeQuw)
+
+### Code Setup 💻
+* This project uses OpenWeathers API to access online data. Go to [OpenWeather.org](http://openweathermap.org/) to setup a free account and get your API key.
+* In the "Weather_Scrapper_ESP8266.io" file you will have to change a fiew things.
+  - Input your Wifi Network credentials in ssid & password
+  - Input your API link with your city ID (& other parameters) as well as the API key
+  - You can use [ArduinoJson](https://arduinojson.org/v5/assistant/) which is a parsing assistant to break down the Json file
 
 ### Flashing Arduino Code on to Esp8266 (Esp-01) 📶
 To flash the WiFi Module ensure you have the following wirings connected:
