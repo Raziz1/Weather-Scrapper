@@ -58,3 +58,11 @@ To upload code to the Arduino board ensure you have the following wirings connec
 * In Tools/Boards change the board to Arduino Uno 
 * Upload the code
 * Once the code is uploaded **Switch the Tx and Rx cables** This will allow the Arduino board to receive and transmit data to the LCD screen
+
+### Wrap Up
+* Once you are finished all the above steps **Switch the GPIO pin on the Esp8266 to 3.3v.** This ensures that it boots up into a none flash mode and reads the code in its flash memory.
+* If you want you can experiment with the Esp8266 low power mode so it is able to run efficiently when needed
+* Feel free to mess around the the code and any other API's. Some API's I would recommend are 
+  - [News API](https://newsapi.org/)
+  - [Number API](http://numbersapi.com/#42)
+  - [Twitter API](https://developer.twitter.com/en/docs)
