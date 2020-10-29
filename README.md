@@ -21,6 +21,12 @@ You can find resources online for setting up your Esp8266 (Esp-01) WiFi Module. 
   - Input your Wifi Network credentials in ssid & password
   - Input your API link with your city ID (& other parameters) as well as the API key
   - You can use [ArduinoJson](https://arduinojson.org/v5/assistant/) which is a parsing assistant to break down the Json file
+  
+### Schematics 📄
+<p> 
+  <img align='Left' src="https://github.com/Raziz1/Weather-Scrapper/blob/main/images/Schematics.PNG? raw=true">
+</p>
+
 
 ### Flashing Arduino Code on to Esp8266 (Esp-01) 📶
 To flash the WiFi Module ensure you have the following wirings connected:
