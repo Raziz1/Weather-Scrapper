@@ -46,7 +46,7 @@ To flash the WiFi Module ensure you have the following wirings connected:
 * Change the Baudrate of the board in the serial monitor and Board Manager. Mine worked ad 115200
 * Select generic Esp8266 module and upload the code.
 * Once the code is uploaded open the Serial Monitor and check what the board is outputting
-* *When flashing the WiFi Module with new code ensure you unplig the VCC power cable and replug it back in. This Should reboot the WiFi Module into Flash mode while clearing its memory*
+* *When flashing the WiFi Module with new code ensure you unplug the VCC power cable and replug it back in. This Should reboot the WiFi Module into Flash mode while clearing its memory*
 
 ### Uploading Code to Arduino for LCD 📺
 To upload code to the Arduino board ensure you have the following wirings connected:
