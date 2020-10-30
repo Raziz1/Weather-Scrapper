@@ -68,7 +68,7 @@ To upload code to the Arduino board ensure you have the following wirings connec
 
 ### Wrap Up 🔭
 * Once you are finished all the above steps **Switch the GPIO pin on the Esp8266 to 3.3v.** This ensures that it boots up into a none flash mode and reads the code in its flash memory.
-* If you want you can experiment with the Esp8266 low power mode so it is able to run efficiently when needed
+* If you want you can experiment, the Esp8266 has a low power mode which allows it to run more efficiently
 * Feel free to mess around the the code and any other API's. Some API's I would recommend are 
   - [News API](https://newsapi.org/)
   - [Number API](http://numbersapi.com/#42)
