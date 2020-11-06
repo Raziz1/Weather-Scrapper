@@ -12,6 +12,12 @@ Arduino UnoR3 + Esp8266 (Esp-01) + LCD
 
 * [Diymall Esp8266 (Esp-01) Wifi Module](https://www.amazon.ca/Diymall%C2%AE-Esp8266-Wireless-Transceiver-Mega2560/dp/B00O34AGSU/ref=sr_1_1?dchild=1&keywords=diymall+esp8266&qid=1603991104&s=electronics&sr=1-1)
 
+## Libraries 📚
+All of the following libraries can be downloaded directly from the Arduion IDE library manager.
+* [Liquid Crystal](https://www.arduino.cc/en/Reference/LiquidCrystal)
+* [ESP8266 WiFi](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html)
+* [ESP8266 HTTP Client](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266HTTPClient)
+* [Arduino JSON](https://github.com/bblanchon/ArduinoJson)
 
 ## Guide 📃
 You can find resources online for setting up your Esp8266 (Esp-01) WiFi Module. This includes running AT-Commands as well as flashing new software on to the module. The Esp8266 is an extremly versatile WiFi Module packed with some handy features in a low-cost chip.
