@@ -18,6 +18,7 @@ All of the following libraries can be downloaded directly from the Arduion IDE l
 * [ESP8266 WiFi](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html)
 * [ESP8266 HTTP Client](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266HTTPClient)
 * [Arduino JSON](https://github.com/bblanchon/ArduinoJson)
+  - Arduino JSON version 5.13.5 worked for me
 
 ## Guide 📃
 You can find resources online for setting up your Esp8266 (Esp-01) WiFi Module. This includes running AT-Commands as well as flashing new software on to the module. The Esp8266 is an extremly versatile WiFi Module packed with some handy features in a low-cost chip.
