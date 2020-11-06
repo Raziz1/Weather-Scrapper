@@ -52,7 +52,7 @@ To flash the WiFi Module ensure you have the following wirings connected:
 
 **Arduino IDE setup:**
 * In File/Preferences/Additional Boards Manager URLs:, add the following URL, http://arduino.esp8266.com/stable/package_esp8266com_index.json
-* In Tools/Boards click on Board Manager and download the Esp8266 library. I used version 2.5 because it was the only library that worked with my module
+* In Tools/Boards click on Board Manager and download the Esp8266 library. I used version **2.5.0** because it was the only library that worked with my module
 * Change the Baudrate of the board in the serial monitor and Board Manager. Mine worked ad 115200
 * Select generic Esp8266 module and upload the code.
 * Once the code is uploaded open the Serial Monitor and check what the board is outputting
